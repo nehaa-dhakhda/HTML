@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <script>
+    function data()
+    {
+        var n=document.getElementById("t_n").value;
+        var e=document.getElementById("t_num").value;
+        
+        var c=document.getElementById("ct").value;
+        var a=document.getElementById("t_ar").value;
+        
+      
+        if(n=="")
+        {
+           document.getElementById("t_n1").value="please enter name";
+           document.getElementById("t_n1").style.color="red";
+        }
+        else{
+            document.getElementById("t_n1").value=n;
+            document.getElementById("t_n1").style.color="blue";
+        }
+              
+        if(e=="")
+        {
+           document.getElementById("t_num1").value="please enter enrollment no";
+           document.getElementById("t_num1").style.color="red";
+        }
+        else{
+            document.getElementById("t_num1").value=e;
+            document.getElementById("t_num1").style.color="blue";
+            
+        }
+        
+        var g1=document.getElementById("m").checked;
+        var g2=document.getElementById("f").checked;
+
+        if( g1==false && g2==false)
+        {
+           document.getElementById("mf").value=" select your gender";
+           document.getElementById("mf").style.color="red";
+        
+        }
+        else{
+
+             if(g1==true)
+             {
+                document.getElementById("mf").value="male";
+                document.getElementById("mf").style.color="blue";
+             }
+             else if(g2==true)
+             {      
+                document.getElementById("mf").value="female";
+                document.getElementById("mf").style.color="blue";
+
+             }
+        }
+      
+        if(c=="")
+        {
+           document.getElementById("ct1").value="select your city";
+           document.getElementById("ct1").style.color="red";
+        }
+        else{
+            document.getElementById("ct1").value=c;
+            document.getElementById("ct1").style.color="blue";
+          
+        }
+        if(a=="")
+        {
+           document.getElementById("t_ar1").value="please enter your address";
+           document.getElementById("t_ar1").style.color="red";
+        }
+        else{
+            document.getElementById("t_ar1").value=a;
+            document.getElementById("t_ar1").style.color="blue";
+        }
+        
+ 
+    }
+    
+   </script>
+
+</head>
+<body >
+    
+    <center><table border="3px" width="800px">
+        <tr>
+            <td >
+            NAME:
+            </td>
+            <td >
+            <input type="text" id="t_n" >
+            </td>
+            <td>
+                <input type="text" id="t_n1" disabled>
+            </td>
+        </tr>    
+        
+        <tr>
+            <td >
+            ENROLL NO.:
+            </td>
+            <td >
+            <input type="number" id="t_num" >
+            </td>
+            <td >
+                <input type="text" id="t_num1" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td >
+             GENDER:
+            </td>
+            <td>
+            <input type="radio" name="gn" id="m" value="male" >male
+            <input type="radio" name="gn" id="f" value="female" >female
+            </td>
+            <td>
+                <input type="text" id="mf" disabled>
+              
+                
+                </td>
+        </tr>
+        <tr>
+            <td>
+            CITY:
+            </td>
+            <td>
+              
+                 <select id="ct">
+                       <option value="city"> city </option>
+                       <option value="amreli"> amreli </option>
+                       
+                       <option value="junagadh"> junagadh </option>
+                       
+                       <option value="surt">surt</option>
+                       
+                       <option value="bhavnagar">bhavnagar</option>
+
+                 </select>
+                 <td>
+                    <input type="text" id="ct1" disabled>
+                    
+                    </td>
+                
+              </td>     
+        </tr>
+        <tr>
+            <td >
+            ADDRESS:
+            </td>
+            <td>      
+            <input type="text" id="t_ar">
+            </td>
+            <td>      
+                <input type="text" id="t_ar1" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+            <center>
+              <input type="button" id="btn" value="ok" onclick="data()">
+            </center>
+            </td>
+        </tr>    
+
+        
+    </table>
+    </center>
+    
+</body>
+</html>

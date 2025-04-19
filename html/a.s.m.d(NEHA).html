@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function data()
+        {
+            var no1,no2,ans;
+            no1=parseInt(document.getElementById("No_1").value);
+            no2=parseInt(document.getElementById("No_2").value);
+            ans=no1+no2;
+            document.write("TOTAL:"+ans);
+        }
+        function data1()
+        {
+            var no1,no2,ans;
+            no1=parseInt(document.getElementById("No_1").value);
+            no2=parseInt(document.getElementById("No_2").value);
+            ans=no1-no2;
+            document.write("TOTAL:"+ans);
+        }
+        function data2()
+        {
+            var no1,no2,ans;
+            no1=parseInt(document.getElementById("No_1").value);
+            no2=parseInt(document.getElementById("No_2").value);
+            ans=no1*no2;
+            document.write("TOTAL:"+ans);
+        }
+        function data3()
+        {
+            var no1,no2,ans;
+            no1=parseInt(document.getElementById("No_1").value);
+            no2=parseInt(document.getElementById("No_2").value);
+            ans=no1/no2;
+            document.write("TOTAL:"+ans);
+        }
+    </script> 
+</head>
+<body>
+<center>
+<table  width="50%" style="margin-top:10%;height:300PX;">
+    <tr>
+        <th colspan="2">ARITHMATIC OPERATION</th>
+    </tr>
+    <tr>
+    <td>
+        <label>
+        Enter a number:
+        </label>
+    </td>
+    <td>
+       &nbsp; <input type="number" id="No_1" style="width:100%;">
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <label>
+        Enter a number:
+        </label>
+    </td>
+    <td>
+       &nbsp; <input type="number" id="No_2" style="width:100%;">
+    </td>  
+    </tr> 
+    <tr>
+        <td colspan="2">
+            <center>
+                <input type="submit" value="ADD" Onclick="data()">      
+                <input type="submit" value="SUB" Onclick="data1()">      
+                <input type="submit" value="MUL" Onclick="data2()">
+                <input type="submit" value="DIV" Onclick="data3()">
+            </center>
+        </td> 
+    </tr>   
+
+
+
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function data()
+        {
+            var n=parseInt(document.getElementById("txt_1").value);
+            var i;
+            var j;
+            for(i=1;i<=10;i++)
+            {
+                j=n*i;
+                document.write(j);
+                document.write("<br>");
+            }
+        }
+    </script>
+    <table>
+        <tr>
+            <td>
+                steps:
+            </td>
+            <td>
+                <input type="number" id="txt_1"  name="txt_1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="print" onclick="data()">
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <script>
+        function data() 
+    {
+  
+        var i;
+        var j;
+        var k=1;
+        var no=parseInt(document.getElementById("_no").value);
+
+        for( i=1;i<=no;i++)
+        {
+           for(j=1;j<=i;j++)
+           {
+              document.write(k++)
+           }
+              document.write("<br>")
+        }
+   }
+
+    </script>
+    <lable>
+        enter number: 
+    </lable>
+    <input type="text" id="_no" placeholder="Enter number">
+    <hr>
+    <input type="button" value="ok" onclick="data()">
+</body>
+</html>

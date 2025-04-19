@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <script>
+            function data()
+            {
+                var n=document.getElementById("name").value;
+                var e=document.getElementById("t_num").value;
+                var c=document.getElementById("tc").value;
+                var a=document.getElementById("t_ar").value;
+               
+                if(n=="")
+                {
+                    document.getElementById("nm1").value ="enter your name";
+                    document.getElementById("nm1").style.color="blue";
+
+                }
+                else{
+                    document.getElementById("nm1").value =n;
+                    document.getElementById("nm1").style.color="blue";
+
+                }
+
+                if(e=="")
+                {
+                    document.getElementById("nm2").value ="enter your number";
+                    document.getElementById("nm2").style.color="blue";
+
+                }
+                else{
+                    document.getElementById("nm2").value =e;
+                    document.getElementById("nm2").style.color="blue";
+
+                }
+
+                if(c=="")
+                {
+                    document.getElementById("nm3").value ="enter your city";
+                    document.getElementById("nm3").style.color="blue";
+
+                }
+                else{
+                    document.getElementById("nm3").value =c;
+                    document.getElementById("nm3").style.color="blue";
+
+                }
+
+                if(a=="")
+                {
+                    document.getElementById("nm4").value ="enter your address";
+                    document.getElementById("nm4").style.color="blue";
+
+                }
+                else{
+                    document.getElementById("nm4").value =a;
+                    document.getElementById("nm4").style.color="blue";
+
+                }
+
+                
+                
+            }
+        </script>
+    </head>
+    <body bgcolor="pink">
+        <center><h1><u>USER DIALOD BOX</u></h1></center>
+        <hr>
+        <center><table border="3px" width="100%">
+            <tr>
+                <td bgcolor="light blue">
+                    Name :
+                </td>
+                <td bgcolor="light blue">
+                    <input type="text" id="name">
+                </td>
+                <td>
+                    <input type="text" id="nm1" disabled>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td bgcolor="light blue">
+                    EN NO. :
+                </td>
+                <td bgcolor="light blue">
+                    <input type="number" id="t_num">
+                </td>
+                <td>
+                    <input type="text" id="nm2" disabled>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td bgcolor="light blue">
+                    CITY :
+                </td>
+                <td bgcolor="light blue">
+                    <input type="text" id="tc">
+                </td>
+                <td>
+                    <input type="text" id="nm3" disabled>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td bgcolor="light blue">
+                    ADDRESS :
+                </td>
+                <td bgcolor="light blue">
+                    <input type="text" id="t_ar">
+                </td>
+                <td>
+                    <input type="text" id="nm4" disabled>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td bgcolor="light blue">
+                    SUBJECT :
+                </td>
+                <td>
+                    <select>
+                        <option>Select subject</option>
+                        <option value="C LAN">C LAN</option>
+                        <option value="HTML">HTML</option>
+                        <option value="TCS"> TCS</option>
+                        <option value="FCA">FCA</option>
+                    </select>
+                </td>
+               
+            </tr>
+
+            <tr>
+                <td bgcolor="light blue" colspan="3">
+                    <input type="button" id="btn" value="OK" onclick="data()">
+                </td>
+            </tr>
+        </table></center>
+    </body>
+</html>

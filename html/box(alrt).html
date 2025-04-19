@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <script>
+    function data()
+    {
+        alert("Your Data Succsesful.......");
+        var n=document.getElementById("t_n").value;
+        var e=document.getElementById("t_num").value;
+        var c=document.getElementById("tc").value;
+        var a=document.getElementById("t_ar").value;
+
+        document.write("ans:   "+n);
+        document.write("<br>ans:   "+e);
+        document.write("<br>ans:   "+c);
+        document.write("<br>ans"+a);
+    }
+    
+   </script>
+
+</head>
+<body bgcolor="pink">
+    <center><h1><u>use dialog box</u></h1></center>
+    <hr>
+    <center><table border="3px" width="800px">
+        <tr>
+            <td bgcolor="lightblue">
+            NAME:
+            </td>
+            <td bgcolor="lightblue">
+            <input type="text" id="t_n" placeholder="Enter your name">
+            </td>
+        </tr>    
+        
+        <tr>
+            <td bgcolor="lightblue">
+            ENROLL NO.:
+            </td>
+            <td bgcolor="lightblue">
+            <input type="number" id="t_num" placeholder="Enter Enrollment no">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="lightblue">
+            CITY:
+            </td>
+            <td bgcolor="lightblue">
+             
+                <input type="text" id="tc">
+                 
+                
+            </td>
+        
+        </tr>
+        <tr>
+            <td bgcolor="lightblue">
+            ADDRESS:
+            </td>
+
+            <td bgcolor="lightblue">      
+            <textarea name="textar" id="t_ar" cols="3" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="lightblue">
+              <input type="button" id="btn" value="ok" onclick="data()">
+            </td>
+        </tr>    
+
+        
+    </table>
+    </center>
+    
+</body>
+</html>

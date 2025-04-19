@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+               <center><h1><u>student info</u></h1></center>
+    
+    <center>
+    <table border="3px" width="900px">
+        <tr>
+            <td>img</td>
+            <td colspan="3">information....</td>
+        </tr>
+        <tr>
+            <td><a href="home.html">home</a></td>
+            <td><a href="about us.html">about us</a></td>
+            <td><a href="login.html">login</a></td>
+            <td><a href="regi(table).html">registration form</a></td>
+        </tr>
+        <tr>
+            <td colspan="4" height="200px">
+
+                
+                    
+                       <script>
+                        function data()
+                        {
+                            var n=document.getElementById("t_n").value;
+                            var e=document.getElementById("t_num").value;
+
+                            if(n=="")
+                               {
+                                    document.getElementById("t_n1").value="please enter name";
+                                    document.getElementById("t_n1").style.color="red";
+                               }
+                               else{
+                                     document.getElementById("t_n1").value=n;
+                                     document.getElementById("t_n1").style.color="blue";
+                               }
+              
+                               if(e=="")
+                               {
+                                  document.getElementById("t_num1").value="please enter enrollment no";
+                                  document.getElementById("t_num1").style.color="red";
+                                     }
+                                else{
+                                      document.getElementById("t_num1").value=e;
+                                      document.getElementById("t_num1").style.color="blue";
+
+                                    }
+                        }
+    
+                                 </script>
+ 
+                         <center><table border="3px" width="800px">
+                        <tr>
+                                            <td >
+                                               NAME:
+                                             </td>
+                                           <td >
+                                               <input type="text" id="t_n" >
+                                           </td>
+                                           <td>
+                                               <input type="text" id="t_n1" disabled>
+                                           </td>
+                       </tr>    
+     
+                         <tr>
+                                         <td >
+                                           ENROLL NO.:
+                                        </td>
+                                        <td >
+                                             <input type="number" id="t_num" >
+                                          </td>
+                                          <td >
+                                            <input type="text" id="t_num1" disabled>
+                                          </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                            <center>
+                              <input type="button"  value="ok" onclick="data()">
+                             
+                            </center>
+                            </td>
+                        </tr>    
+                
+                        
+                    </table>
+                    </center>
+                    
+               
+            
+        
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                devloped by neha.....
+            </td>
+        </tr>
+    </table>
+    </center>    
+    
+</body>
+</html>

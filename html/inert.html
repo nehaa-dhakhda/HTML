@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        textarea{
+            box-shadow: 7px 7px 18px black;
+        }
+         input{
+            box-shadow: 7px 7px 18px black;
+        }
+        button{
+            box-shadow:7px 7px 18px black;
+        }
+        body {
+              text-shadow:7px 7px 18px black;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              background-image:url('dsu.png');
+            }
+
+        table{
+             
+              box-shadow: 20px 20px 30px;
+        }
+    </style>
+</head>
+<body>
+  
+               <center><h2><u>PRODUCT</u></h2></center>
+    
+    <center>
+    <table border="3px" width="900px">
+       
+        <tr>
+            <th><a href="inert.html">INSERT</a></th>
+            <th><a href="master_delet.html">DELET</a></th>
+            <th><a href="master_view.html">VIEW</a></th>
+           
+        </tr>
+        <tr>
+            <td colspan="4" height="200px" >
+
+                <form action="product1.php" method="post">
+                    <center>
+                            <br><br> 
+                            product id : 
+                            <input type="number" name="txt_id" id="txt_id" ><br><br> 
+        
+                
+                            product name :
+                            <input type="text" name="txt_nm" id="txt_nm" > <br><br> 
+  
+                            Description :
+                            <textarea name="txt_des" id="txt_des" rows="2" cols="20"></textarea> <br><br> 
+                        
+                            price :
+                            <input type="number" name="txt_pr" id="txt_pr" >  <br><br> 
+    
+                            Quantity :
+                            <input type="number" name="txt_qun" id="txt_qun" > <br><br> 
+                        
+                            <center>
+                            <button type="submit" class="btn btn-success" data-toggle="button" aria-pressed="false" autocomplete="off">SAVE</button> 
+                            <button type="submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">RESET</button>  
+                            </center>
+                            <br><br> 
+                       
+                    </center>
+                </form>
+            </td>
+        </tr>
+       
+    </table>
+    </center>    
+
+</body>
+</html>
